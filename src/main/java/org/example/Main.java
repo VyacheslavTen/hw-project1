@@ -15,7 +15,7 @@ public class Main {
         bird.setAge(5);
         System.out.println(bird.getAge());
         Bird bird2 = new Bulfinch(4);
-        System.out.println(bird2.getAge());
+        System.out.println(bird.getAge());
 
     }
 }

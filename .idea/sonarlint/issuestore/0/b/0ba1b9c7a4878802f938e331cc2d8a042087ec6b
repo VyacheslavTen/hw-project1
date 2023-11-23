@@ -1,4 +1,8 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(ãÂåŞüÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(ãÂåŞüÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(Ø—¶ì
+V
+java:S1854"9Remove this useless assignment to local variable "bird2".(Î®šÂ8àŠæ¿1
+L	java:S106"+Replace this use of System.out by a logger.(ãÂåŞüÿÿÿÿ8«şúå¿1
+L	java:S106"+Replace this use of System.out by a logger.(ãÂåŞüÿÿÿÿ8­şúå¿1
+G
+java:S1481"*Remove this unused "bird2" local variable.(Î®šÂ8æŠæ¿1
+L	java:S106"+Replace this use of System.out by a logger.(ãÂåŞüÿÿÿÿ8¯şúå¿1
