@@ -13,10 +13,28 @@ W
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 P
  src/test/java/core/BaseTest.java,9\0\907e821266cf16dd0a7c6cd2bf9c3f2844bd4eaf
-X
-(src/test/java/tests/TestLoginErrors.java,c\0\c075b5794280bc0d02daa207df192ae5b7a24e8f
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 R
 "src/test/java/pages/LoginPage.java,2\f\2febc867dad266b12f3cf09596e572e0dcf37dbf
+a
+1src/test/java/tests/TestEmptyLoginFormErrors.java,3\6\3666a0b81a59e11ef35b3733edfcde4fe25ce346
+h
+8src/test/java/tests/TestEmptyPasswordLoginFormError.java,e\1\e1cebe840f69cf543910ec3501edec7765383727
+d
+4src/test/java/tests/TestWrongPasswordThreeTimes.java,5\d\5d7fd5280ed22f037f846189f4bcbeb59c38b1a3
+Z
+*src/test/java/tests/TestWrongPassword.java,d\8\d89a12acf39fbcdc0a5645f261fc109341e02ecd
+\
+,src/test/java/pages/RestorePasswordPage.java,a\7\a7d311807cf6902f5a91ebd844395be3ae537c06
+_
+/src/test/java/pages/RecoveryStartPhoneLink.java,8\1\8113535dfdce11e8880efb5b6265ef944ee74c6c
+Z
+*src/test/java/tests/TestSupportAppeal.java,b\1\b11ffef81ce9e6e8fb0f914e812d2ed9d762d06f
+Z
+*src/test/java/pages/RecoveryPhoneCode.java,d\b\db5354e9fcb55b12de4eaa5528f6e2ce66cca542
+R
+"src/test/java/pages/GiftsPage.java,3\e\3ea2ee450f71351d44d15c0d9e20b47c628a9e5b
+Y
+)src/test/java/tests/TestFindGiftItem.java,2\5\2511b501eebf87495c277f67fe8edac9097c34aa
