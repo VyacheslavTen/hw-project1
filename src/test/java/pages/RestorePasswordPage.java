@@ -61,10 +61,15 @@ public class RestorePasswordPage extends LoadableComponent {
         return this;
     }
 
-    public RestorePasswordPage switchToSupportChat() {
-        WebElement supportChatFrame = driver.findElement(SUPPORT_CHAT);
-        driver.switchTo().frame(supportChatFrame);
+    public RestorePasswordPage switchToSupportChat() throws InterruptedException {
+        Thread.sleep(3000);
+        driver.switchTo().window(driver.getWindowHandles().iterator().next());
         return this;
+    }
+
+    public RecoveryStratEmailLink clickEmailLink() {
+        driver.findElement(EMAIL_LINK).click();
+        return new RecoveryStratEmailLink(driver);
     }
 
 }

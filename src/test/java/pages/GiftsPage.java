@@ -13,7 +13,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 
 public class GiftsPage extends LoadableComponent {
 
-    public static final By GIFT_ITEM = By.xpath("//div[@class=\"gifts-catalog-categories_group\"]/div[@class=\"gifts-catalog-category\"]/a[@href=\"/gifts/catalog/mezhdunarodnye-prazdniki\"]");
+    public static final By GIFT_ITEM = By.xpath("//div[@class=\"gifts-catalog-categories_group\"]/div[@class=\"gifts-catalog-category\"]/a[@href=\"/gifts/catalog/yubilei/po-godam\"]");
 
     public static final By HEADER_TEXT = By.xpath("//h1[@class=\"gifts-catalog-header_title\"]");
 
@@ -36,7 +36,7 @@ public class GiftsPage extends LoadableComponent {
     }
 
     public String returnHeaderText () throws InterruptedException {
-        new WebDriverWait(driver, Duration.ofSeconds(5)).wait();
+        //new WebDriverWait(driver, Duration.ofSeconds(5)).wait();
         String headerText = driver.findElement(HEADER_TEXT).getText();
         return headerText;
     }

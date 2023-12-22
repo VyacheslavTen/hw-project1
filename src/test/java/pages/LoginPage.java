@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
@@ -52,6 +54,12 @@ public class LoginPage extends LoadableComponent {
 
     public static final By RESTORE_BUTTON = By.xpath("//button[@data-l=\"t,restore\"]");
 
+    public static final By QR_CODE_INFO_HEADER = By.xpath("//div[@class=\"qr_code_info_header\"]");
+
+    public static final By MORE_BUTTON = By.xpath("//button[@class=\"more-popup_btn h-mod\"]");
+
+    public static final By AGREEMENT_LINK = By.xpath("//a[@href=\"/agreementpage?st.cmd=helpAgreementPage&st._aid=FatFooter_helpAgreementPage\"]");
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         isLoaded();
@@ -80,6 +88,7 @@ public class LoginPage extends LoadableComponent {
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(visibilityOfElementLocated(GP_BUTTON));
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(visibilityOfElementLocated(YANDEX_BUTTON));
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(visibilityOfElementLocated(APPLE_BUTTON));
+        new WebDriverWait(driver, Duration.ofSeconds(6)).until(visibilityOfElementLocated(MORE_BUTTON));
     }
 
     public void clickLoginButtonWithError() {
@@ -106,5 +115,37 @@ public class LoginPage extends LoadableComponent {
     public RestorePasswordPage restorePassword() {
         driver.findElement(RESTORE_BUTTON).click();
         return new RestorePasswordPage(driver);
+    }
+
+    public void qrLogin() {
+        driver.findElement(QR_BUTTON).click();
+    }
+
+    public String qrCodeHeader() throws InterruptedException {
+        // new WebDriverWait(driver, Duration.ofSeconds(5)).wait();
+        String qrHeader = driver.findElement(QR_CODE_INFO_HEADER).getText();
+        return qrHeader;
+    }
+
+    public RegistrationPage clickRegisterButton() {
+        driver.findElement(REGISTER_BUTTON).click();
+        return new RegistrationPage(driver);
+    }
+
+    public RestorePasswordPage clickRestoreLink() {
+        driver.findElement(RESTORE_LINK).click();
+        return new RestorePasswordPage(driver);
+    }
+
+    public LoginPage hoverMoreButton() {
+        WebElement moreButton = driver.findElement(MORE_BUTTON);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(moreButton).perform();
+        return this;
+    }
+
+    public AgreementPage clickAgreementLink() {
+        driver.findElement(AGREEMENT_LINK).click();
+        return new AgreementPage(driver);
     }
 }

@@ -38,3 +38,17 @@ R
 "src/test/java/pages/GiftsPage.java,3\e\3ea2ee450f71351d44d15c0d9e20b47c628a9e5b
 Y
 )src/test/java/tests/TestFindGiftItem.java,2\5\2511b501eebf87495c277f67fe8edac9097c34aa
+T
+$src/test/java/tests/TestQRLogin.java,b\d\bd4e9bb987c7574c48733cdd0a57a1ebb9043b7e
+Y
+)src/test/java/pages/RegistrationPage.java,7\0\705c52e81e81bc6a508de54ed0ba77082630225f
+c
+3src/test/java/tests/TestWrongRegistrationPhone.java,7\b\7bbe6d34361553cde241e3de30841894b81afe4c
+l
+<src/test/java/tests/TestWrongEmailInRestorePasswordPage.java,d\8\d8e973b94441907874181e1a3873746d4e2c075a
+_
+/src/test/java/pages/RecoveryStratEmailLink.java,e\4\e457064c1bc97a0b2ffa8d325680f9b21d536923
+d
+4src/test/java/tests/TestAgreementLinkNavigation.java,b\4\b4bf393288cf399dacd65646c2a37ec76cb6af4b
+V
+&src/test/java/pages/AgreementPage.java,b\2\b227b862d0fbbb71d56c51b80a3b450e30bfadab

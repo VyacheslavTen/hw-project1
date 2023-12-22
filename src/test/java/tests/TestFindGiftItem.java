@@ -12,7 +12,7 @@ public class TestFindGiftItem extends BaseTest {
         GiftsPage giftsPage = new GiftsPage(getDriver());
         giftsPage.scrollAndClickOnGiftItem();
         Thread.sleep(2000);
-        Assertions.assertEquals("Открытки на международные праздники", giftsPage.returnHeaderText() ,"текст не совпал с ожидаемым");
-        Assertions.assertEquals("https://ok.ru/gifts/catalog/mezhdunarodnye-prazdniki", getDriver().getCurrentUrl(), "адрес не совпал с ожидаемым");
+        Assertions.assertEquals("Открытки с юбилеем по годам", giftsPage.returnHeaderText() ,"текст не совпал с ожидаемым");
+        Assertions.assertEquals("https://ok.ru/gifts/catalog/yubilei/po-godam", getDriver().getCurrentUrl(), "адрес не совпал с ожидаемым");
     }
 }
